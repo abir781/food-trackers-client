@@ -11,14 +11,22 @@ import Home from './Pages/Home.jsx';
 import Register from './Pages/Register.jsx';
 import Login from './Pages/Login.jsx';
 import Fridge from './Pages/Fridge.jsx';
+import Authprovider from './Context/Authprovider.jsx';
+import Addfood from './Pages/Addfood.jsx';
+import Myitems from './Pages/Myitems.jsx';
+import Fooddetails from './Pages/Fooddetails.jsx';
+import Privateroute from './Route/Privateroute.jsx';
+import Errorpage from './Pages/Errorpage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component:Root,
+     errorElement:<Errorpage></Errorpage>,
     children:[
       {
-        path:'/',
+        // path:'/',
+        index:true,
         Component:Home,
       },
       {
@@ -32,6 +40,27 @@ const router = createBrowserRouter([
          {
         path:'/fridge',
         Component:Fridge,
+      },
+          {
+        path:'/addfood',
+        element:(<Privateroute>
+          <Addfood></Addfood>
+        </Privateroute>)
+      },
+           {
+        path:'/myitems',
+        element:(<Privateroute>
+          <Myitems></Myitems>
+        </Privateroute>)
+        
+      },
+      {
+        path:'/fooddetails/:id',
+        hydrateFallbackElement:(<div className='flex justify-center items-center'>
+          <span className="loading loading-spinner loading-lg "></span>
+        </div>),
+        Component:Fooddetails,
+        loader:({params})=>fetch(`http://localhost:3000/allfoods/${params.id}`)
       }
     ]
   },
@@ -39,6 +68,11 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} />
+    <Authprovider>
+
+      <RouterProvider router={router} />
+
+    </Authprovider>
+   
   </StrictMode>,
 )
