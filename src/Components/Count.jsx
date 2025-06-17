@@ -6,7 +6,7 @@ const Count = () => {
     const[nearlyexpirecount,setnearlyexpirecount]=useState(0);
       useEffect(() => {
                     
-                  fetch("http://localhost:3000/expiryfoods").then(res=>res.json()).then(data=>setexpirycount(data.length))
+                  fetch("https://food-server-brown.vercel.app/expiryfoods").then(res=>res.json()).then(data=>setexpirycount(data.length))
                   
             
               },[] );
@@ -14,7 +14,7 @@ const Count = () => {
 
      useEffect(() => {
                     
-                  fetch("http://localhost:3000/nearylyexpiryfoods").then(res=>res.json()).then(data=>setnearlyexpirecount(data.length))
+                  fetch("https://food-server-brown.vercel.app/nearylyexpiryfoods").then(res=>res.json()).then(data=>setnearlyexpirecount(data.length))
                   
             
               },[] );

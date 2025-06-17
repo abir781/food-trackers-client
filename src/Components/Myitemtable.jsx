@@ -21,7 +21,7 @@ const Myitemtable = ({mitem,allfoodsdata,setallfoodsdata,openmodal,setopenmodal,
     }).then((result) => {
       if (result.isConfirmed) {
     
-        fetch(`http://localhost:3000/allfoods/${_id}`,{
+        fetch(`https://food-server-brown.vercel.app/allfoods/${_id}`,{
           method:'DELETE'
         })
         .then(res=>res.json())

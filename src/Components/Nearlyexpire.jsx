@@ -5,7 +5,7 @@ const Nearlyexpire = () => {
     const [nearlyexpire,setnearlyexpire]=useState([]);
        useEffect(() => {
             
-          fetch("http://localhost:3000/nearylyexpiryfoods").then(res=>res.json()).then(data=>setnearlyexpire(data))
+          fetch("https://food-server-brown.vercel.app/nearylyexpiryfoods").then(res=>res.json()).then(data=>setnearlyexpire(data))
           
     
       },[] );

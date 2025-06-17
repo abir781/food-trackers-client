@@ -2,7 +2,7 @@ import React, { Suspense, useEffect, useState } from 'react';
 import Allfoods from '../Components/Allfoods';
 
 
-// const foodpromise=fetch("http://localhost:3000/allfoods").then(res=>res.json())
+// const foodpromise=fetch("https://food-server-brown.vercel.app/allfoods").then(res=>res.json())
 
 const Fridge = () => {
       const [foods, setFoods] = useState([]);
@@ -12,14 +12,14 @@ const Fridge = () => {
       
 
 //   const fetchFoods = () => {
-//     fetch(`http://localhost:3000/allfoods?searchParams=${search}`)
+//     fetch(`https://food-server-brown.vercel.app/allfoods?searchParams=${search}`)
 //       .then(res => res.json())
 //       .then(data => setFoods(data))
 //       .catch(err => console.error("Error fetching foods:", err));
 //   };
 
   useEffect(() => {
-     fetch(`http://localhost:3000/allfoods?searchParams=${search}`)
+     fetch(`https://food-server-brown.vercel.app/allfoods?searchParams=${search}`)
       .then(res => res.json())
       .then(data => setFoods(data))
       .catch(err => console.error("Error fetching foods:", err));

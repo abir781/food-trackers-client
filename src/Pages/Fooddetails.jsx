@@ -24,7 +24,7 @@ const getRemainingTime = (expirydate) => {
 };
 
     const textnotepromise=foodid=>{
-    return fetch(`http://localhost:3000/textnotes?foodid=${foodid}`).then(res=>res.json())
+    return fetch(`https://food-server-brown.vercel.app/textnotes?foodid=${foodid}`).then(res=>res.json())
 }
 
 
@@ -88,7 +88,7 @@ else{
     }
     // console.log(newnoteobj)
 
-    axios.post('http://localhost:3000/textnotes',newnoteobj)
+    axios.post('https://food-server-brown.vercel.app/textnotes',newnoteobj)
     .then(res=>{
         
         setNotes(prev => [...prev, newnoteobj]);

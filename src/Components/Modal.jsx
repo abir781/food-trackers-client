@@ -35,7 +35,7 @@ const Modal = ({setopenmodal,updateid,setallfoodsdata}) => {
         const updatedfood={image,title,category,quantity,expirydate,description,addeddate,email}
         
 
-         fetch(`http://localhost:3000/allfoods/${updateid}`,{
+         fetch(`https://food-server-brown.vercel.app/allfoods/${updateid}`,{
                     method:'PUT',
                     headers:{
                         'content-type':'application/json'
@@ -47,7 +47,7 @@ const Modal = ({setopenmodal,updateid,setallfoodsdata}) => {
                 .then(data=>{
                     if(data.modifiedCount){
                         toast.success("data updated successfully")
-                        fetch(`http://localhost:3000/myfoods?email=${user.email}`)
+                        fetch(`https://food-server-brown.vercel.app/myfoods?email=${user.email}`)
                          .then(res => res.json())
                           .then(updatedData => {
                            setallfoodsdata(updatedData); 

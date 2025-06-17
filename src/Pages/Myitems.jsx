@@ -6,7 +6,7 @@ import { Authcontext } from '../Context/Authcontext';
 
 
     const myitemspromise=(email,accessToken)=>{
-    return fetch(`http://localhost:3000/myfoods?email=${email}`,{
+    return fetch(`https://food-server-brown.vercel.app/myfoods?email=${email}`,{
         headers:{
             authorization: `Bearer ${accessToken}`
         }

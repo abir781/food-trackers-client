@@ -60,7 +60,7 @@ const router = createBrowserRouter([
           <span className="loading loading-spinner loading-lg "></span>
         </div>),
         Component:Fooddetails,
-        loader:({params})=>fetch(`http://localhost:3000/allfoods/${params.id}`)
+        loader:({params})=>fetch(`https://food-server-brown.vercel.app/allfoods/${params.id}`)
       }
     ]
   },

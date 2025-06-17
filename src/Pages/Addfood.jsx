@@ -38,7 +38,7 @@ const Addfood = () => {
         const newfood={image,title,category,quantity,expirydate,description,addeddate,email}
         
 
-        axios.post('http://localhost:3000/allfoods', newfood)
+        axios.post('https://food-server-brown.vercel.app/allfoods', newfood)
              .then(res=>{
                 
                 if(res.data.insertedId){

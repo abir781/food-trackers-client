@@ -5,7 +5,7 @@ const Expiryfood = () => {
     const [expire,setexpire]=useState([]);
            useEffect(() => {
                 
-              fetch("http://localhost:3000/expiryfoods").then(res=>res.json()).then(data=>setexpire(data))
+              fetch("https://food-server-brown.vercel.app/expiryfoods").then(res=>res.json()).then(data=>setexpire(data))
               
         
           },[] );
