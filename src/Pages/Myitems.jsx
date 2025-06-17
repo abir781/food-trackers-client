@@ -5,12 +5,19 @@ import { Authcontext } from '../Context/Authcontext';
 
 
 
-    const myitemspromise=email=>{
-    return fetch(`http://localhost:3000/myfoods?email=${email}`).then(res=>res.json())
+    const myitemspromise=(email,accessToken)=>{
+    return fetch(`http://localhost:3000/myfoods?email=${email}`,{
+        headers:{
+            authorization: `Bearer ${accessToken}`
+        }
+    })
+    .then(res=>res.json())
 }
 
 const Myitems = () => {
-    const {user}=use(Authcontext)
+    const {user}=use(Authcontext);
+    
+
 
 
     
@@ -18,7 +25,7 @@ const Myitems = () => {
         <div>
             <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
 
-                <Myitemlist myitemspromise={myitemspromise(user.email)}></Myitemlist>
+                <Myitemlist myitemspromise={myitemspromise(user.email,user.accessToken)}></Myitemlist>
 
             </Suspense>
             

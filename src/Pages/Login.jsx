@@ -14,7 +14,7 @@ const Login = () => {
     //  const {signin,setuser}=use(Authcontext);
     const {signin}=use(Authcontext);
      const location=useLocation();
-     console.log(location);
+    
      const navigate=useNavigate();
      const emailref=useRef();
     //  const provider = new GoogleAuthProvider();
@@ -41,31 +41,7 @@ const Login = () => {
       });
      }
 
-    //  const handleforgetpassword=()=>{
-    //   console.log(emailref.current.value);
-    //   const email=emailref.current.value;
-    //   sendPasswordResetEmail(auth,email)
-    //      .then(()=>{
-    //       toast.success("A password reset email is sent.please check your email");
-    //      })
-    //      .catch((error)=>{
-    //       toast.warning(error.message);
-    //      })
-
-    //  }
-
-    //  const handlegooglesignin=()=>{
-    //   signInWithPopup(auth,provider)
-    //      .then((result)=>{
-    //       console.log(result);
-    //       toast.success("Login successfull");
-    //       navigate("/");
-         
-    //      })
-    //      .catch((error)=>{
-    //       toast.warning(error.message);
-    //      })
-    //  }
+  
 
     return (
         <div className='flex justify-center min-h-screen items-center'>
