@@ -41,6 +41,11 @@ const Fridge = () => {
     setFoods(sorted);
   };
 
+  const handleSortByQuantityAsc = () => {
+    const sorted = [...foods].sort((a, b) => a.quantity - b.quantity);
+    setFoods(sorted);
+  };
+
   
     return (
         <div>
@@ -71,7 +76,7 @@ const Fridge = () => {
         </select>
             </div>
 
-            <div className=''>
+            <div className='space-x-2'>
 
                  <button 
         onClick={handleSortByQuantityDesc} 
@@ -79,6 +84,13 @@ const Fridge = () => {
       >
         Sort by Quantity (Desc)
       </button>
+
+         <button
+            onClick={handleSortByQuantityAsc}
+            className="px-4 py-2 bg-green-500 text-white rounded"
+          >
+            Sort by Quantity (Asc)
+          </button>
 
             </div>
 
