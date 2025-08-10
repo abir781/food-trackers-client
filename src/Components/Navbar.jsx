@@ -42,19 +42,20 @@ const Navbar = () => {
                 </ul>
                 
                 <img className='w-14 h-14' src="/logo.png" alt="" />
+                <input type="checkbox" value="abyss" className="toggle theme-controller" />
 
               
 
             </div>
             <div>
                 <ul className='hidden md:flex md:gap-5'>
-                    <li className=''><NavLink className={({isActive})=>(isActive?'font-bold ':'')} to="/">Home</NavLink></li>
-                    <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/fridge">Fridge</NavLink></li>
+                    <li className='text-black'><NavLink className={({isActive})=>(isActive?'font-bold ':'')} to="/">Home</NavLink></li>
+                    <li className='text-black'><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/fridge">Fridge</NavLink></li>
                     {
                         user &&<>
-                         <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/addfood">Addfood</NavLink></li>
-                    <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/myitems">Myitems</NavLink></li>
-                     <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/contact">Contact Us</NavLink></li>
+                         <li className='text-black'><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/addfood">Addfood</NavLink></li>
+                    <li className='text-black'><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/myitems">Myitems</NavLink></li>
+                     <li className='text-black'><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/contact">Contact Us</NavLink></li>
                         
                         </>
                     }

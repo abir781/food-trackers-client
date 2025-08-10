@@ -16,7 +16,7 @@ const Features = () => {
                  whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
                 
-                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2'>
+                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                          <FaPlusMinus size={32}/>
@@ -30,7 +30,7 @@ const Features = () => {
                 whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
                  
-                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2'>
+                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                         <BiWorld size={32}/>
@@ -43,7 +43,7 @@ const Features = () => {
                 <motion.div 
                  whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
-                className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2'>
+                className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                         <PiClockCountdownFill size={32} />
@@ -56,7 +56,7 @@ const Features = () => {
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
-                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2'>
+                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                        <PiListChecksFill size={32} />
