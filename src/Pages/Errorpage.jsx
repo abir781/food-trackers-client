@@ -15,7 +15,7 @@ const Errorpage = () => {
 
     
     return (
-        <div >
+        <div className='bg-white min-h-screen'>
             
             <div className='flex justify-center items-center'>
             <div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaAddressBook, FaPhoneAlt } from 'react-icons/fa';
+import { FaAddressBook, FaFacebookSquare, FaInstagramSquare, FaPhoneAlt } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 
@@ -25,6 +25,27 @@ const Contact = () => {
                     <div className='text-white'>
                     <h2 className='text-xl font-bold'>Email</h2>
                     <h2 className='text-xl font-bold'>hasan.abir3176@gmail.com</h2>
+
+                    </div>
+                    
+                </div>
+
+                 <div className='flex items-center gap-3'>
+                    <FaFacebookSquare className='text-orange-500' size={45} /> 
+                    <div className='text-white'>
+                    <h2 className='text-xl font-bold'>Facebook</h2>
+                    <h2 className='text-xl font-bold'>https://www.facebook.com/abirhasan09z/</h2>
+
+                    </div>
+                    
+                </div>
+
+                <div className='flex items-center gap-3'>
+                    
+                    <FaInstagramSquare className='text-orange-500' size={45} />
+                    <div className='text-white'>
+                    <h2 className='text-xl font-bold'>Instagram</h2>
+                    <h2 className='text-xl font-bold'>https://www.instagram.com/abirhasan09z/</h2>
 
                     </div>
                     
