@@ -32,6 +32,7 @@ const Navbar = () => {
 
                             <li className='px-2 py-1 '><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/addfood">Addfood</NavLink></li>
                      <li className='px-2 py-1 '><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/myitems">Myitems</NavLink></li>
+                      <li className='px-2 py-1 '><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/contact">Contact Us</NavLink></li>
                         
                         </>
                     }
@@ -53,6 +54,7 @@ const Navbar = () => {
                         user &&<>
                          <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/addfood">Addfood</NavLink></li>
                     <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/myitems">Myitems</NavLink></li>
+                     <li className=''><NavLink className={({isActive})=>(isActive?'font-bold':'')} to="/contact">Contact Us</NavLink></li>
                         
                         </>
                     }
