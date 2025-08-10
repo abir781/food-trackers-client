@@ -28,10 +28,14 @@ const Addfood = () => {
         const category=form.category.value;
         const quantity=form.quantity.value;
         const expiredate=new Date(form.expiredate.value + "T00:00:00");
+        // const expirydate = expiredate;
         const expirydate=expiredate.toLocaleDateString();
         const description=form.description.value;
         const addeddate=form.addeddate.value;
         const email=form.email.value;
+
+      
+
         
         
        

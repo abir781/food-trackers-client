@@ -20,7 +20,7 @@ const Navbar = () => {
         })
     }
     return (
-        <div className=' '>
+        <div className=' bg-yellow-500 sticky top-0  w-full z-50'>
         <div className='flex items-center justify-between py-6  w-11/12 mx-auto'>
             <div className='flex items-center gap-2'>
                 <Menu onClick={()=>setopen(!open)} className='md:hidden '></Menu>
@@ -69,9 +69,9 @@ const Navbar = () => {
 
                    {
                     user?<><img className='w-12  rounded-full' src={`${user ? user.photoURL:""}`} title={`${user?user.displayName:""}`} alt="" />
-                    <button onClick={handlelogout} className='btn btn-warning'>Logout</button>
-                    </>:<>  <Link to='/register' className='btn btn-warning'>Register</Link>
-                    <Link to='/login' className='btn btn-warning'>Login</Link></>
+                    <button onClick={handlelogout} className='btn btn-accent'>Logout</button>
+                    </>:<>  <Link to='/register' className='btn btn-accent'>Register</Link>
+                    <Link to='/login' className='btn btn-accent'>Login</Link></>
                    }
                   
                 </div>

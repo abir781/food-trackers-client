@@ -47,9 +47,14 @@ const Modal = ({setopenmodal,updateid,setallfoodsdata}) => {
                 .then(data=>{
                     if(data.modifiedCount){
                         toast.success("data updated successfully")
-                        fetch(`https://food-server-brown.vercel.app/myfoods?email=${user.email}`)
+                        fetch(`https://food-server-brown.vercel.app/myfoods?email=${user.email}`,{
+        headers:{
+            authorization: `Bearer ${user.accessToken}`
+        }
+    })
                          .then(res => res.json())
                           .then(updatedData => {
+                            console.log(updatedData)
                            setallfoodsdata(updatedData); 
                          setopenmodal(false); 
                             })
