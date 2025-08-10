@@ -17,6 +17,7 @@ import Myitems from './Pages/Myitems.jsx';
 import Fooddetails from './Pages/Fooddetails.jsx';
 import Privateroute from './Route/Privateroute.jsx';
 import Errorpage from './Pages/Errorpage.jsx';
+import Contact from './Pages/Contact.jsx';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,13 @@ const router = createBrowserRouter([
         path:'/myitems',
         element:(<Privateroute>
           <Myitems></Myitems>
+        </Privateroute>)
+        
+      },
+          {
+        path:'/contact',
+        element:(<Privateroute>
+           <Contact></Contact>
         </Privateroute>)
         
       },
