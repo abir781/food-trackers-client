@@ -16,7 +16,7 @@ const Textnotelist = ({textnotepromise}) => {
            
 
             {
-                textnotedata.map(singletextnote=><div key={singletextnote._id} className='bg-yellow-500 p-4 mb-10 rounded-2xl'>
+                textnotedata.map(singletextnote=><div key={singletextnote._id} className='bg-emerald-500 p-4 mb-10 rounded-2xl'>
 
                     <h3 className='text-2xl font-semibold'>{singletextnote.textnote}</h3>
                        <h2 className='text-xl font-semibold'>posted date:{singletextnote.posteddate}</h2>

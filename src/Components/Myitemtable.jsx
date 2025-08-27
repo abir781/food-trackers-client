@@ -79,10 +79,10 @@ const Myitemtable = ({mitem,allfoodsdata,setallfoodsdata,openmodal,setopenmodal,
          <button onClick={()=>{
             setopenmodal(true)
             setupdateid(mitem._id)
-            }}  className="btn btn-warning">Update</button>
+            }}  className="btn btn-primary">Update</button>
 
           
-          <button onClick={()=>handledelete(mitem._id)} className="btn btn-success">Delete</button>
+          <button onClick={()=>handledelete(mitem._id)} className="btn btn-primary">Delete</button>
         </th>
 
        

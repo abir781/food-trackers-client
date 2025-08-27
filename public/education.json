@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Banana Ripening",
+    "fact": "Bananas release ethylene gas, which speeds up the ripening of nearby fruits. Store them separately if you don’t want other fruits to ripen quickly."
+  },
+  {
+    "id": 2,
+    "title": "Storing Tomatoes",
+    "fact": "Tomatoes should not be stored in the refrigerator, as it changes their texture and flavor. Keep them at room temperature."
+  },
+  {
+    "id": 3,
+    "title": "Freezing Bread",
+    "fact": "Bread lasts much longer if stored in the freezer. Slice it before freezing so you can take out only what you need."
+  },
+  {
+    "id": 4,
+    "title": "Reviving Wilted Greens",
+    "fact": "Soak wilted lettuce or spinach in a bowl of ice water for 5–10 minutes to make them crisp again."
+  },
+  {
+    "id": 5,
+    "title": "Best Before vs Expiry",
+    "fact": "‘Best before’ indicates quality, not safety. Many foods are still safe to eat after the best before date if stored properly."
+  },
+  {
+    "id": 6,
+    "title": "Leftover Rice Safety",
+    "fact": "Cooked rice should be cooled quickly and refrigerated within 2 hours. Reheat thoroughly before eating to avoid bacteria growth."
+  },
+  {
+    "id": 7,
+    "title": "Citrus Freshness",
+    "fact": "Store lemons and limes in the fridge inside a sealed bag to keep them fresh for up to a month."
+  },
+  {
+    "id": 8,
+    "title": "Milk Storage",
+    "fact": "Milk lasts longer when stored on the middle shelves of the fridge, not in the door, where temperatures fluctuate more."
+  }
+]

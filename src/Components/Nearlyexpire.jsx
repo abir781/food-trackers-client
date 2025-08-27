@@ -11,8 +11,8 @@ const Nearlyexpire = () => {
       },[] );
       
     return (
-        <div className='w-11/12 mx-auto my-10'>
-            <h2 className='text-4xl text-center text-yellow-700 mb-10'>Nearly Expiry Items </h2>
+        <div className='w-11/12 mx-auto mt-25'>
+            <h2 className='text-5xl text-center font-bold mb-15'>Nearly Expiry Items </h2>
             <div className='grid grid-cols-1 md:grid-cols-4 gap-10'>
 
                  {

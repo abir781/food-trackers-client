@@ -6,17 +6,17 @@ import { motion } from "motion/react"
 
 const Features = () => {
     return (
-        <div className='w-11/12 mx-auto'>
+        <div className='w-11/12 mx-auto mt-25'>
             <motion.h1 
             initial={{scale:0.3}}
             animate={{scale:1,transition:{duration:4,repeat:Infinity}}}
-            className='text-5xl text-center font-bold'>Key Features</motion.h1>
+            className='text-5xl text-center font-bold mb-15'>Key Features</motion.h1>
             <div className='grid grid-cols-1 gap-5 md:grid-cols-4 my-7'>
                 <motion.div
                  whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
                 
-                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
+                 className='text-center bg-emerald-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                          <FaPlusMinus size={32}/>
@@ -30,7 +30,7 @@ const Features = () => {
                 whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
                  
-                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
+                 className='text-center bg-emerald-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                         <BiWorld size={32}/>
@@ -43,7 +43,7 @@ const Features = () => {
                 <motion.div 
                  whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
-                className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
+                className='text-center bg-emerald-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                         <PiClockCountdownFill size={32} />
@@ -56,7 +56,7 @@ const Features = () => {
                 <motion.div
                   whileHover={{ scale: 1.1 }}
                  whileTap={{ scale: 0.95 }}
-                 className='text-center bg-yellow-500 rounded-2xl p-10 space-y-2 text-black'>
+                 className='text-center bg-emerald-500 rounded-2xl p-10 space-y-2 text-black'>
                     <div className='flex justify-center'>
 
                        <PiListChecksFill size={32} />

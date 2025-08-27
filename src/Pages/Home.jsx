@@ -5,6 +5,7 @@ import Banner from '../Components/Banner';
 import Nearlyexpire from '../Components/Nearlyexpire';
 import Expiryfood from '../Components/Expiryfood';
 import Count from '../Components/Count';
+import Education from '../Components/Education';
 
 const Home = () => {
     return (
@@ -14,7 +15,9 @@ const Home = () => {
             <Expiryfood></Expiryfood>
             <Count></Count>
             <Features></Features>
+            <Education></Education>
             <Faq></Faq>
+            
             
         </div>
     );

@@ -19,18 +19,18 @@ const Count = () => {
             
               },[] );
     return (
-        <div className='w-11/12 mx-auto my-10'>
-            <h1 className='text-5xl font-bold text-center mb-10'>CountUp</h1>
+        <div className='w-11/12 mx-auto mt-25'>
+            <h1 className='text-5xl font-bold text-center mb-15'>CountUp</h1>
            <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
 
-               <div className='bg-yellow-500 p-10 rounded-2xl text-black'>
+               <div className='bg-emerald-500 p-10 rounded-2xl text-black'>
 
                 <p className='text-2xl font-bold text-center'>Expired Food Count</p>
 
                 <p className='text-2xl font-bold text-center'><CountUp start={0} end={expirycount} duration={9} delay={0}/> </p>
             </div>
 
-            <div className='bg-yellow-500 p-10 rounded-2xl text-black'>
+            <div className='bg-emerald-500 p-10 rounded-2xl text-black'>
                  <p className='text-2xl font-bold text-center'>Nearly Expired Food Count</p>
 
                 <p className='text-2xl font-bold text-center'> <CountUp start={0} end={nearlyexpirecount} duration={9} delay={0}/></p>

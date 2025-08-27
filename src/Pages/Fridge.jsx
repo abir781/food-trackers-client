@@ -48,10 +48,10 @@ const Fridge = () => {
 
   
     return (
-        <div>
+        <div className='my-25'>
 
 
-            <div className='flex gap-4 justify-center mt-10'>
+            <div className='flex gap-4 justify-center mb-15'>
     <div className="md:w-[400px]  mb-4">
         <input
           onChange={(e) => setSearch(e.target.value)}
@@ -80,14 +80,14 @@ const Fridge = () => {
 
                  <button 
         onClick={handleSortByQuantityDesc} 
-        className=" px-4 py-2 bg-blue-500 text-white rounded"
+        className=" px-4 py-2 btn btn-primary  rounded"
       >
         Sort by Quantity (Desc)
       </button>
 
          <button
             onClick={handleSortByQuantityAsc}
-            className="px-4 py-2 bg-green-500 text-white rounded"
+            className="px-4 py-2 btn btn-primary  rounded"
           >
             Sort by Quantity (Asc)
           </button>

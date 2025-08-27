@@ -23,14 +23,15 @@ const Myitemlist = ({myitemspromise}) => {
 
 
     return (
-     <div className='w-11/12 mx-auto min-h-screen'>
+     <div className='w-11/12 mx-auto min-h-screen my-25'>
+      <h1 className='text-5xl font-bold text-center mb-15'>My Items</h1>
 
             <div>
                <div className="overflow-x-auto">
   <table className="table">
     {/* head */}
     <thead>
-      <tr className='text-green-700'>
+      <tr className=''>
        
         <th>Title</th>
         <th>Category</th>
