@@ -8,7 +8,7 @@ const Allfoods = ({foods,setFoods}) => {
     return (
         <div className='w-11/12 mx-auto'>
 
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 mt-10 mb-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-10 mb-10'>
 
                  {
                 foods.map(singlefood=><Singfood key={singlefood._id} singlefood={singlefood}></Singfood>)
